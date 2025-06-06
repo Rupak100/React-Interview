@@ -31,9 +31,9 @@ const Data =()=>{
       //cleanup function
 
       useEffect(()=>{
-        return ()=>{
+         ()=>{
             console.log("this will run at component unmounting and in the next effect cleanup function");
-            
+            return
         }
       },[data])
 
